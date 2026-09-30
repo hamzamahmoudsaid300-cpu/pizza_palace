@@ -11,19 +11,19 @@ let menu = [
         name: "cheese pizza",
         details: "alot of cheese and a crispy crust",
         price: 450,
-        image: "images/Image20260826155109.jpg",
+        image: "/Image20260826155109.jpg",
      },
      {
         name: "burger",
         details: "juicy beef patty with fresh lettuce and tomato",
         price: 250,
-        image: "images/Image20260826155109.jpg",
+        image: "/Image20260826155109.jpg",
      },
      {
         name: "pasta",
         details: "creamy Alfredo sauce with tender pasta",
         price: 300,
-        image: "images/Image20260826155109.jpg",
+        image: "/Image20260826155109.jpg",
      },
 ]
 let cardscon = document.getElementById("cards-con")
