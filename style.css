@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+*{
+      font-family: "Cookie", cursive
+
+}
+
+body{
+    padding: 10px;
+    background-color: #f1f8ed;
+}
+#menu{
+    background-color: #f1f8ed;
+    padding: 10px;
+}
+h2{
+    background-color: #00335E;
+    color: #F1F8ED;
+    padding: 10px;
+}
+h3{
+    color: #00335E;
+    font-size: 20px;
+}
+p{
+    color: #7b8894;
+}
+.price{
+    color: #358A0B;
+    font-size: 20px;
+    font-weight: 500;
+}
+button{
+    background-color: #358A0B;
+    color: #F1F8ED;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.10s ease-in-out;
+}
+button:hover{background-color: #8BC34A;}
+
+.food-card{
+    width: 250px;
+    text-align: center;
+    border:2px solid #E3EAF0;
+    padding: 16px;
+    margin: 20px;
+    border-radius: 14px;
+    box-shadow:0 4px 14px rgba(0, 52, 94, 0.10);
+    transition: all 0.10s ease-in-out;
+    animation:show 1s ease-out forwards;
+}
+.food-card:nth-child(1){
+      animation-delay: 0s;
+}
+.food-card:nth-child(2){
+        animation-delay: 0.2s;
+}
+.food-card:nth-child(3){
+        animation-delay: 0.4s;
+}
+    @keyframes show{
+        from{
+            opacity:0;
+            transform: translateY(100px);
+         }to{
+            opacity:1;
+            transform: translateY(0px);
+    }
+
+}
+.food-card:hover{
+    transform: translateY(-6px);
+    box-shadow:0 8px 24px rgba(0, 52, 94, 0.20);
+}
+img{
+    width: 100%;
+    border-radius: 14px;
+}
+#hero{
+    background-color: #00335E;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: #F1F8ED;
+}
+#hero h2{
+    padding: 10px;
+    margin: 0;
+    font-size: 30px;
+}
+nav{
+    padding: 0;
+    background-color: #00335E;
+    color: #F1F8ED;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #F1F8ED;
+    font-size: 20px;
+}
+.cards-con{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media (max-width: 700px) {
+    .cards-con{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .food-card{
+        width: 100%;    
+    }
+}
+
+.item{
+        width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+    padding: 10px;
+    transition:  0.3s ease;
+    box-shadow: 0 4px 14px #ccc;
+    border-radius:10px ;
+}
