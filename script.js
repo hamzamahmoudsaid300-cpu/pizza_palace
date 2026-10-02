@@ -23,7 +23,7 @@ let menu = [
         name: "pasta",
         details: "creamy Alfredo sauce with tender pasta",
         price: 300,
-        image: "Image20260826155109.jpg
+        image: "Image20260826155109.jpg"
      },
 ]
 let cardscon = document.getElementById("cards-con")
